@@ -21,8 +21,12 @@ public class boat : MonoBehaviour
     public float turnSpeed = 50f;
     public float acceleration = 20f;
     public float maxSpeed = 20f;
+    public float startcountdown = 3f;
+    private bool canMove = false;
+
 
     public float currentSpeed = 0f;
+    private int startTimer;
 
     void Start()
     {
@@ -54,6 +58,11 @@ public class boat : MonoBehaviour
             float turn = horizontal * turnSpeed * Time.fixedDeltaTime;
             Quaternion turnRotation = Quaternion.Euler(0, turn, 0);
             rb.MoveRotation(rb.rotation * turnRotation);
+        }
+
+        if (startTimer <= 0)
+        {
+            canMove = true;
         }
     }
 }
