@@ -12,6 +12,7 @@ public class Timer : MonoBehaviour
     public float totalLapTime;
     public float totalCountdownTime;
 
+    public boat speed;
 
     void Update()
     {
@@ -20,14 +21,14 @@ public class Timer : MonoBehaviour
         {
             totalCountdownTime -= Time.deltaTime;
             startCountdown.text = Mathf.Round(totalCountdownTime).ToString();
+            speed.currentSpeed = 0;
         }
         if (totalCountdownTime <= 0)
         {
             startCountdown.text = "";
             totalLapTime -= Time.deltaTime;
             lapTime.text = Mathf.Round(totalLapTime).ToString();
-
-           
+            speed.currentSpeed = 20;
         }
     }
 

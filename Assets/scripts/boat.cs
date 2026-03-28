@@ -17,7 +17,7 @@ public class boat : MonoBehaviour
         transform.Rotate(Vector3.up * turnSpeed * Time.deltaTime);
     }*/
     private Rigidbody rb;
-    public float speed = 20f;
+    //public float speed = 20f;
     public float turnSpeed = 50f;
     public float acceleration = 20f;
     public float maxSpeed = 20f;
@@ -63,6 +63,11 @@ public class boat : MonoBehaviour
         if (startTimer <= 0)
         {
             canMove = true;
+        }
+
+        if (startTimer < 3)
+        {
+            canMove = false;
         }
     }
 }

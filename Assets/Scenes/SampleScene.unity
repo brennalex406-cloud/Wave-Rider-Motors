@@ -656,6 +656,7 @@ MonoBehaviour:
   startCountdown: {fileID: 1612915337}
   totalLapTime: 70
   totalCountdownTime: 3
+  speed: {fileID: 499550531}
 --- !u!4 &154340150
 Transform:
   m_ObjectHideFlags: 0
