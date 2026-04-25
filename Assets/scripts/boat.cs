@@ -18,9 +18,9 @@ public class boat : MonoBehaviour
     }*/
     private Rigidbody rb;
     //public float speed = 20f;
-    public float turnSpeed = 50f;
-    public float acceleration = 20f;
-    public float maxSpeed = 20f;
+    public float turnSpeed = 15f;
+    public float acceleration = 15;
+    public float maxSpeed = 15f;
     public float startcountdown = 3f;
     private bool canMove = false;
 
@@ -52,6 +52,7 @@ public class boat : MonoBehaviour
 
         Vector3 moveDirection = -transform.right * currentSpeed;
         rb.velocity = new Vector3(moveDirection.x, rb.velocity.y, moveDirection.z);
+        rb.AddForce(Vector3.down * 50f, ForceMode.Acceleration);
 
         if (currentSpeed != 0)
         {

@@ -28,7 +28,7 @@ public class Timer : MonoBehaviour
             startCountdown.text = "";
             totalLapTime -= Time.deltaTime;
             lapTime.text = Mathf.Round(totalLapTime).ToString();
-            speed.currentSpeed = 20;
+            speed.currentSpeed = 35;
         }
     }
 
