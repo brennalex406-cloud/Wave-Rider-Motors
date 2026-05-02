@@ -3,13 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Enemy : MonoBehaviour
+public class GaneManager : MonoBehaviour
 {
-   private void OnCollisionEnter(Collision collision)
+    private int time;
+
+    void Update()
     {
-        if(collision.gameObject.tag == "Enemy")
+
+        /*if (time > 0)
         {
             SceneManager.LoadScene("Lose");
         }
+*/
+
     }
 }

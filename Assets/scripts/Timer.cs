@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class Timer : MonoBehaviour
@@ -30,6 +31,11 @@ public class Timer : MonoBehaviour
             lapTime.text = Mathf.Round(totalLapTime).ToString();
             speed.currentSpeed = 35;
         }
+        if (totalLapTime < 0)
+        {
+            SceneManager.LoadScene("Lose");
+        }
+
     }
 
 }
