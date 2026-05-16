@@ -8,9 +8,13 @@ public class NewBehaviourScript : MonoBehaviour
 {
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag == "Finish")
+        if (collision.gameObject.tag == "Boat")
         {
             SceneManager.LoadScene("Win");
+        }
+        if (collision.gameObject.tag == "Player 2")
+        {
+            SceneManager.LoadScene("Lose");
         }
     } 
 }

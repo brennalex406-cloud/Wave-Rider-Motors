@@ -14,7 +14,7 @@ public class Timer : MonoBehaviour
     public float totalCountdownTime;
 
     public boat speed;
-
+    
     void Update()
     {
 
