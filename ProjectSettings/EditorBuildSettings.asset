@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
+    path: Assets/Scenes/Wave Rider Motors.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
     path: Assets/Scenes/WIn.unity
@@ -14,4 +14,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Lose.unity
     guid: 718698331876268408cc07daa1d3546b
+  - enabled: 1
+    path: Assets/Scenes/Main menu.unity
+    guid: 6d0cc507fe651ab4cad27e4ad9ae992b
+  - enabled: 1
+    path: Assets/Scenes/Credits.unity
+    guid: 9e6869c27ae2d3a4291835facd44bdc5
   m_configObjects: {}

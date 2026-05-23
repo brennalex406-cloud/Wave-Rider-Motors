@@ -11,4 +11,8 @@ public class Buttons : MonoBehaviour
         SceneManager.LoadScene(0);
     }
     
+    public void Credits()
+    {
+        SceneManager.LoadScene(4);
+    }
 }
